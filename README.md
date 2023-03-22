@@ -1,13 +1,14 @@
 # Anusandhan-Univeristy-Project-Bank
 
 ## Mysql 
-    - create database **credential**.
-    - table name - **users**.
-    - table description 
+
+   - create database ***credential***.
+   - table name - ***users***.
+   - table description 
     
-    **NOTE : userID is auto_increment and userEmail will be unique since we are allowing login with the help of userEmail.**
+   ***NOTE : userID is auto_increment and userEmail will be unique since we are allowing login with the help of userEmail.***
     
-    ![image](https://user-images.githubusercontent.com/65289620/226820845-3c51346f-10aa-4753-ae95-04ed9b28b840.png)
+   ![image](https://user-images.githubusercontent.com/65289620/226820845-3c51346f-10aa-4753-ae95-04ed9b28b840.png)
 
 
 
