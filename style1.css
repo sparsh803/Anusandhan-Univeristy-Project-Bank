@@ -4,48 +4,81 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
-section{
+body{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100vh;
-    background: url(img/loginimg.jpg) no-repeat;
+    background: url("img/img5.jpg") no-repeat;
+    /* background-image: linear-gradient((0,0,0,0.4),(0,0,0,0.4)),url(img/img5.jpg); */
     background-size: cover;
     background-position: center;
-    animation: animateBg 5s linear infinite;
+    background-attachment: local;
+    /* animation: animateBg 5s linear infinite; */
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.logo{
+    font-size: 4em;
+    font-stretch: wider;
+    color: #37007a;
+    user-select: none;
+    margin-left: -80px;
+    font-family: 'Lobster', cursive;
+    border-radius: 100px;
+    border-color: #000;
+    border-top-right-radius: 10vmax;
 }
 
-@keyframes animateBg{
+
+/* @keyframes animateBg{
     100%{
         filter: hue-rotate(360deg);
     }
-}
+} */
+
+
 .login-box{
     position: relative;
     width: 400px;
     height: 450px;
+    left: 0px;
     background: transparent;
-    border: 2px solid rgba(255, 255, 255, .5);
+    border: 2px solid #01182e;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(35px);
+    margin-top: 85px;
 }
-h2{
-    font-size: 2em;
-    color: #fff;
+
+
+
+.login-box h2{
+    font-size: 3em;
+    color: #01182e;
     text-align: center;
     vertical-align: text-top;
 }
+
+
 
 .input-box{
     position: relative;
     width: 310px;
     margin: 30px 0;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #01182e;
 }
 .input-box label{
     position: absolute;
@@ -95,7 +128,8 @@ h2{
 .remember-forget a:hover{
     text-decoration: underline;
 }
-button{
+
+.btn{
     width: 100%;
     height: 40px;
     background: #fff;
@@ -107,28 +141,31 @@ button{
     color: #000;
     font-weight: 500;
 }
-.register-link{
+.login-register{
     font-size: .9em;
     color: #fff;
     text-align: center;
     margin: 25px 0 10px;
+    font-weight: 500;
 }
-.register-link p a{
+.login-register p a{
     color: #fff;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
 }
-.register-link p a:hover{
+.login-register p a:hover{
     text-decoration: underline;
 }
 
-@media (max-width: 360px){
+@media screen and (max-width: 360px){
     .login-box{
         width: 100%;
         height: 100vh;
         border-radius: 0;
+        color: aquamarine;
     }
     .input-box{
         width: 290px;
     }
+    
 }
