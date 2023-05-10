@@ -22,7 +22,7 @@ create table tempRecords(
  status varchar(15) default "pending" not null,
  projectAuthors varchar(255) not null,
  projectKeywords varchar(255) not null,
- projectDescription varchar(1000) not null,
+ projectDescription varchar(10000) not null,
  filePath varchar(500) not null,
  foreign key (studentID) references users(id)
 );
@@ -33,7 +33,7 @@ create table permRecords(
  projectTitle varchar(255) not null,
  projectAuthors varchar(255) not null,
  projectKeywords varchar(255) not null, 
- projectDescription varchar(1000) not null, 
+ projectDescription varchar(10000) not null, 
  filePath varchar(500) not null,
  foreign key (studentID) references users(id)
 );
