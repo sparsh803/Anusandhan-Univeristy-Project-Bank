@@ -19,7 +19,7 @@ create table tempRecords(
  tokenID int primary key auto_increment,
  studentID int not null,
  projectTitle varchar(255) not null,
- status varchar(15) default "pending" not null,
+ status varchar(15) default "Pending" not null,
  projectAuthors varchar(255) not null,
  projectKeywords varchar(255) not null,
  projectDescription varchar(10000) not null,
